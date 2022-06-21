@@ -125,9 +125,8 @@ public class Logic {
                 parallelResistance =  1 / serialSum;
                 adjMatrix[curr][i] = false;
 
-                if (adjMatrix[curr][parralelEnd]) {
-                    parallelResistance += 1 / resistors[curr][parralelEnd];
-                }
+                if (adjMatrix[curr][parralelEnd])
+
                 resistors[curr][parralelEnd] = 1 / parallelResistance;
                 adjMatrix[curr][parralelEnd] = true;
             }
